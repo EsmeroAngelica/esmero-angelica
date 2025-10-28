@@ -222,12 +222,11 @@
 }
 
 .image-section {
-  padding: 130px 0 50px 0;
+  padding: 120px 0 30px 0;
   grid-column: 1/11;
 }
 
  .footer {
   height: 0;
 }
-
 }
