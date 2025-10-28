@@ -19,12 +19,10 @@ background-size: 400%, 400%;
   100% { background-position: 0% 50%; }
 }
 
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
 }
-
 
 .navbar {
   grid-column: 1/11;
@@ -53,51 +51,9 @@ background-size: 400%, 400%;
   text-shadow: 0 0 10px #00ffff;
 }
 
-
 #menuList {
   display: flex;
 }
-/* 
-@media screen and (max-width: 665px) {
-  .menu-icon {
-    display: block;
-  }
-
-  #menuList {
-    display: none;
-    position: absolute;
-    top: 110px;
-    right: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    width: 150px;
-    text-align: center;
-    transition: all 0.4s ease;
-    z-index: 1000;
-  }
-
-  #menuList.active {
-    display: flex;
-    animation: fadeSlideDown 0.4s ease forwards;
-  }
-
-  @keyframes fadeSlideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-} */
-
 
 .navbar ul {
  list-style: none;
@@ -105,7 +61,6 @@ background-size: 400%, 400%;
   font-weight:700;
   gap: 60px;
 }
-
 
 .navbar a {
   text-decoration: none;
@@ -178,245 +133,7 @@ font-style: italic;
   margin-top: 70px;
 }
 
-
 .footer {
   grid-column: 1/10;
   height: 12vh;
-}
-
-@media screen and (max-width: 990px) {
-.grid-container {
-    display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  }
-
-  .navbar { 
-  padding: 50px 20px;
-  }
-
-  .navbar ul {
-    gap: 45px;
-  }
-
-.navbar #logo {
-  font-size: 33px;
-}
-
-.navbar a {
-   font-size: 30px;
-}
-
-.image-section {
-  padding: 155px 0 20px 0;
-  grid-column: 3/4;
-}
-
-  .image-section img {
-    width: 180px;
-    height: 180px;
-  }
-
-.text-section {
-  margin-top: 150px;
-  grid-column: 4/15;
-}
-
-  .text-section .intro {
-     font-size: 19px;
-  }
-
-  .text-section .name {
-   font-size: 49px;
-  }
-
-  .text-section .role {
-     font-size: 22px;
-  }
-
-  .text-section .quote {
-    font-size: 25px;
-  margin-top: 60px;
-  }
-
-}
-
-@media screen and (max-width: 800px) {
-.grid-container {
-    display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  }
-
-  .navbar {
-     padding: 50px 20px;
-  }
-
-  .navbar ul {
-    gap: 18px;
-  }
-
-.navbar #logo {
-  font-size: 30px;
-}
-
-.navbar a {
-   font-size: 28px;
-}
-
-.image-section {
-  padding: 155px 0 20px 0;
-  grid-column: 3/4;
-}
-
-  .image-section img {
-    width: 170px;
-    height: 170px;
-  }
-
-.text-section {
-  margin-top: 150px;
-  grid-column: 4/15;
-}
-
-  .text-section .intro {
-     font-size: 16px;
-  }
-
-  .text-section .name {
-   font-size: 40px;
-  }
-
-  .text-section .role {
-     font-size: 18px;
-  }
-
-  .text-section .quote {
-    font-size: 18px;
-  margin-top: 50px;
-  }
-
-}
-
-
-@media screen and (max-width: 665px) {
-  .menu-icon {
-    display: block;
-  }
-
-  #menuList {
-    display: none;
-    position: absolute;
-    top: 110px;
-    right: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    width: 150px;
-    text-align: center;
-    transition: all 0.4s ease;
-    z-index: 1000;
-  }
-
-  #menuList.active {
-    display: flex;
-    animation: fadeSlideDown 0.4s ease forwards;
-  }
-
-  @keyframes fadeSlideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-
-    .navbar {
-    padding: 50px 35px;
-  }
-
-  .navbar ul {
-     gap: 15px;
-  }
-
-  .navbar #logo {
-  font-size: 35px;
-}
-
-.navbar a {
-   font-size: 20px;
-}
-
-.image-section {
-  grid-column: 1/11;
-  padding: 75px 0 50px 0;
-}
-
-  .image-section img {
-    width: 160px;
-    height: 160px;
-  }
-
-
-  .text-section {
-    margin-top: 20px;
-     grid-column: 1/11;
-  }
-
-  .text-section .intro {
-     font-size: 15px;
-      text-align: center;
-  }
-
-  .text-section .name {
-   font-size: 35px;
-   text-align: center;
-  }
-
-  .text-section .role {
-     font-size: 15px;
-     text-align: center;
-  }
-
-  .text-section .quote {
-    font-size: 19px;
-    text-align: center;
-  margin-top: 40px;
-  }
-
-  .footer {
-  height: 5vh;
-}
-
-}
-
-@media screen and (max-width: 450px) {
-  
-    .navbar ul {
-     gap: 7px;
-  }
-
-  .navbar #logo {
-  font-size: 30px;
-}
-
-.navbar a {
-   font-size: 19px;
-}
-
-.image-section {
-  padding: 130px 0 50px 0;
-  grid-column: 1/11;
-}
-
- .footer {
-  height: 0;
-}
-
 }
