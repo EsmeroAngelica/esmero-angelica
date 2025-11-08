@@ -4,25 +4,35 @@
 }
 
 body {
-    font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', serif;
   color: black;
-  background: linear-gradient(135deg, #024f9c, #0074D9, #00FFFF, #7F00FF, #FF00FF, #A7FFEB);
-min-height: 100vh;
+  background: linear-gradient(135deg, #024f9c, #0074D9, #37b8d8, #7F00FF, #FF00FF, #A7FFEB);
+  min-height: 100vh;
   width: 100%;
-background-size: 400%, 400%;
+  background-size: 400%, 400%;
   animation: electricFlow 10s ease infinite;
 }
 
 @keyframes electricFlow {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
+
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
 }
+
 
 .navbar {
   grid-column: 1/11;
@@ -34,7 +44,7 @@ background-size: 400%, 400%;
   backdrop-filter: blur(8px);
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 0 0 20px 20px;
-  box-shadow: 0 20px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 20px 15px rgba(0, 0, 0, 0.2);
 }
 
 .menu-icon {
@@ -43,12 +53,13 @@ background-size: 400%, 400%;
   cursor: pointer;
   font-weight: bold;
   color: black;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  text-shadow: 0 0 20px #ffffff, 0 0 15px #ffffff;
 }
 
 .menu-icon:hover {
   color: #00ffff;
   text-shadow: 0 0 10px #00ffff;
+  transform: scale(1.1);
 }
 
 #menuList {
@@ -56,18 +67,19 @@ background-size: 400%, 400%;
 }
 
 .navbar ul {
- list-style: none;
+  list-style: none;
   display: flex;
-  font-weight:700;
-  gap: 60px;
+  font-weight: 700;
+  gap: 40px;
 }
 
 .navbar a {
   text-decoration: none;
   color: black;
-  font-size: 37px;
+  font-size: 36px;
   font-weight: bold;
   transition: color 0.4s ease, text-shadow 0.4s ease;
+  text-shadow: 0 0 8px #ffffff, 0 0 15px #ffffff;
 }
 
 .navbar a:hover {
@@ -76,28 +88,29 @@ background-size: 400%, 400%;
 }
 
 .navbar #logo {
- font-weight: bold;
-  font-size: 40px;
+  font-weight: bold;
+  font-size: 45px;
+  text-shadow: 0 0 8px #ffffff, 0 0 15px #ffffff;
 }
 
 .image-section {
   grid-column: 2/5;
-    padding: 155px 0 20px 0;
+  padding: 155px 0 20px 0;
   text-align: center;
-   margin: 0 auto;
+  margin: 0 auto;
 }
 
 .image-section img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  object-fit: cover; 
- }
+  object-fit: cover;
+}
 
 
 .text-section {
   grid-column: 5/10;
-   margin-top: 150px;
+  margin-top: 150px;
   display: grid;
   place-content: center;
 }
@@ -111,26 +124,33 @@ background-size: 400%, 400%;
 
 .text-section .intro {
   font-style: italic;
+  font-weight: bold;
   font-size: 20px;
-  color: white;
+  color: black;
+  text-shadow: 0 0 8px #ffffff, 0 0 15px #ffffff;
 }
 
 .text-section .name {
-  font-size: 60px;
+  font-size: 55px;
   font-weight: bold;
-  color: white;
+  color: black;
+  text-shadow: 0 0 8px #ffffff, 0 0 15px #ffffff;
 }
 
 .text-section .role {
- font-size: 25px;
-  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  text-shadow: 0 0 8px #ffffff, 0 0 15px #ffffff;
 }
 
 .text-section .quote {
-font-style: italic;
-  color: white;
-  font-size: 27px;
+  font-style: italic;
+  font-weight: bold;
+  color: black;
+  font-size: 25px;
   margin-top: 70px;
+  text-shadow: 0 0 8px #ffffff, 0 0 15px #ffffff;
 }
 
 .footer {
