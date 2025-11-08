@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+
+  <div class="grid-container">
+
+    <div class="navbar">
+      <div id="logo">My Portfolio</div>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <ul id="menuList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div> 
+
+    <div class="image-section">
+      <img src="photo.jpg.jfif" alt="Profile Picture">
+    </div>
+
+    <div class="text-section">
+      <ul>
+        <li class="name"><strong>Angelica Esmero</strong></li>
+        <li class="birth"><strong>Date of Birth: Nov. 26, 2004</strong></li>
+        <li class="age"><strong>Age: 20 years old</strong></li>
+        <li class="status"><strong>Civil Status: Single</strong></li>
+      </ul>
+
+      <p class="about">
+        <br>> A passionate student who loves learning about technology and design.</br>
+      </p>
+    </div>
+
+    <div class="footer"></div>
+
+  </div>
+
+</body>
+
+</html>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menuList");
+    menu.classList.toggle("active");
+  }
+</script>

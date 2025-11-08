@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+
+  <div class="grid-container">
+
+    <div class="navbar">
+      <div id="logo">My Portfolio</div>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <ul id="menuList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="image-section">
+      <img src="photo.jpg.jfif" alt="Profile Picture">
+    </div>
+
+    <div class="text-section">
+      <ul>
+        <li class="name"><strong>Angelica Esmero</strong></li>
+        <li class="birth"><strong>Contact No.: 09505173197</strong></li>
+        <li class="age"><strong>Email:</strong>
+     <a href="mailto:esmeroangelica18@gmail.com" class="contact-link">esmeroangelica18@gmail.com
+     </a>
+     </li>
+      </ul>
+
+      <p class="about">
+        <br>Fb Acc.:
+        <a href="https://www.facebook.com/angelica.esmero.10" target="_blank" class="contact-link">Esmero Angelica
+        </a>
+      </p>
+    </div>
+
+    <div class="footer"></div>
+
+  </div>
+ 
+</body>
+
+</html>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menuList");
+    menu.classList.toggle("active");
+  }
+</script>
