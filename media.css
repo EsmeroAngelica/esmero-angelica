@@ -100,7 +100,6 @@
   font-size: 20px;
 }
 
-
   .text-section .about {
     font-size: 20px;
     text-align: center;
@@ -112,7 +111,7 @@
   }
 }
 
-@media screen and (max-width: 588px) {
+@media screen and (max-width: 750px) {
 
   #menuList {
     width: 200px;
