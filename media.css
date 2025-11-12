@@ -169,13 +169,21 @@
     grid-column: 1/11;
   }
 
+    .text-section .intro {
+    font-size: 16px;
+  }
+
   .text-section .name {
-    font-size: 45px;
+    font-size: 40px;
     text-align: center;
   }
 
+   .text-section .role {
+    font-size: 18px;
+  }
+
   .text-section .quote {
-    font-size: 19px;
+    font-size: 18px;
   }
 
   .text-section .about {
