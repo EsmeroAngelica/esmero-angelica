@@ -169,6 +169,11 @@
     grid-column: 1/11;
   }
 
+  .image-section img {
+    width: 150px;
+    height: 150px;
+  }
+
     .text-section .intro {
     font-size: 16px;
   }
@@ -189,6 +194,21 @@
   .text-section .about {
     font-size: 18px;
   }
+
+    .text-section .age {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .text-section .birth {
+    text-align: center;
+    font-size: 18px;
+  }
+
+.text-section .status {
+  text-align: center;
+  font-size: 18px;
+}
 
   .footer {
     height: 0;
