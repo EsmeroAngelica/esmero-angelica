@@ -187,7 +187,7 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 380px) {
 
   #menuList {
     width: 120px;
@@ -205,26 +205,46 @@
     font-size: 16px;
   }
 
+  .image-section img {
+    width: 150px;
+    height: 150px;
+  }
+
   .text-section .intro {
-    font-size: 19px;
+    font-size: 17px;
   }
 
   .text-section .name {
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
   }
 
   .text-section .role {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .text-section .quote {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .text-section .about {
-    font-size: 16px;
+    font-size: 15px;
   }
+
+  .text-section .age {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .text-section .birth {
+    text-align: center;
+    font-size: 18px;
+  }
+
+.text-section .status {
+  text-align: center;
+  font-size: 18px;
+}
 
   .footer {
     height: 0;
