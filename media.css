@@ -154,7 +154,7 @@
   }
 
   .navbar #logo {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .menu-icon {
@@ -166,7 +166,7 @@
   }
 
   .image-section {
-    padding: 100px 0 30px 0;
+    padding: 120px 0 30px 0;
     grid-column: 1/11;
   }
 
